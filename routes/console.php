@@ -20,4 +20,5 @@ Artisan::command('inspire', function () {
 
 Artisan::command('hey', function () {
     \App\Jobs\TimeOutJob::dispatch();
+    \App\Jobs\ManuallyReportedTimeOutJob::dispatch();
 });
